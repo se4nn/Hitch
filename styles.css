@@ -1,0 +1,280 @@
+:root {
+  --snow: #FAFAFA;
+  --dark: #1B1B37;
+  --sand: #FDF1E2;
+  --olive: #3A3B35;
+  --heather: #565676;
+}
+
+body {
+  background:  var(--snow);
+  padding: 24px 48px;
+}
+
+h1, h2 {
+  color: var(--dark);
+  font-family: 'FT Klon';
+  font-style: normal;
+  font-weight: normal;
+}
+
+h1{ 
+  font-size: 80px;
+  line-height: 96px;
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: -0.04em;
+  max-width: 560px;
+}
+
+p {
+  color: var(--heather);
+  font-weight: 400;
+}
+
+a, label {
+  color: var(--dark);
+  font-weight: 500;
+}
+
+p, li, a, label {
+  font-family: 'DM Sans', sans-serif;
+  max-width: 560px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+p.large {
+  font-size: 24px;
+  line-height: 32px;
+  max-width: 640px;
+}
+
+a {
+  font-weight: 500;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li{
+  list-style: none;
+  position: relative;
+}
+
+nav ul li a {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  color: var(--dark);
+  margin-right: 24px;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid var(--dark);
+}
+
+.logo {
+  font-family: 'FT Klon';
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--dark);
+}
+
+section {
+  margin: 144px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0px 48px;
+  grid-auto-flow: row;
+  align-items: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 16px 24px;
+  border-radius: 32px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--snow);
+  background: var(--dark);
+  text-decoration: none;
+}
+
+.tag {
+  padding: 8px 16px;
+  border-radius: 24px;
+  color: var(--dark);
+  background: var(--sand);
+}
+
+.tag-array .tag {
+  margin-right: 24px;
+}
+
+.tag-array {
+  display: flex;
+  align-items: center;
+}
+
+.tag-small {
+  padding: 4px 8px;
+  background: var(--sand);
+  border-radius: 24px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+img {
+  width: 100%;
+  max-width: 688px;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cta h2, .cta p{
+  text-align: center;
+  max-width: 640px;
+}
+
+.cta-title {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.cta-title .tag-small {
+  position: absolute;
+  top: -16px;
+  right: -64px;
+}
+
+input {
+  padding: 16px;
+  background: rgba(27, 27, 55, 0.16);
+  border-radius: 4px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+}
+
+input[type="date"] {
+  text-transform: uppercase;
+  color: var(--heather);
+}
+
+*::placeholder {
+  color: var(--heather);
+}
+
+.pageclip-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 888px;
+}
+
+.pageclip-form .cta-questions {
+  margin: 48px 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0px 24px;
+  width: 100%;
+}
+
+.cta-question {
+  display: flex;
+  flex-direction: column;
+  min-width: 33%;
+}
+
+.cta-question label {
+  margin-bottom: 8px;
+}
+
+.pageclip-form__submit {
+  display: block;
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  width: fit-content;
+}
+
+
+/* PAGE SPECIFIC CSS */
+
+.hero {
+  margin: 24px 0 96px;
+  align-items: end;
+}
+
+.hero img {
+  width: calc(100vw / 3);
+}
+
+.hero .tag-array {
+  margin-top: 96px;
+}
+
+nav .tag-small {
+  position: absolute;
+  top: -12px;
+  right: -20px;
+}
+
+/* TYPE PAIRINGS */
+
+h1 + p, h2 + p {
+  margin-top: 24px;
+}
+
+p + a.button {
+  margin-top: 48px
+}
+
+p + p {
+  margin-top: 8px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1080px) {
+
+  
+
+}
+
+@media only screen and (max-width: 720px) {
+
+  .cta-question {
+    margin-bottom: 24px;
+  }
+
+}
