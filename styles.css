@@ -111,7 +111,7 @@ section {
 
 .grid {
   display: grid;
-  gap: 0px 48px;
+  gap: var(--medium);
   grid-auto-flow: row;
   align-items: center;
   grid-template-columns: 1fr 1fr;
@@ -264,6 +264,10 @@ footer {
 
 .a-end {
   align-self: end;
+}
+
+.start {
+  order: -1;;
 }
 
 
