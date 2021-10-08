@@ -20,8 +20,11 @@
       element.classList.toggle("show");
     }
   </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
+  <script>AOS.init();</script>
   <nav>
     <a class="hamburger" onclick="toggleMenu()"><img src="./assets/img/menu.svg"></a>
     <ul id="menu">
@@ -38,7 +41,7 @@
     </ul>
     <a href="#" class="logo">Hitch</a>
   </nav>
-  <section class="hero grid">
+  <section class="hero grid" data-aos="fade-up"  data-aos-duration="1500" data-aos-once="true">
     <div class="hero-content row-end">
       <h1>Let your dream day speak for itself</h1>
       <p class="large">Invite your friends, share your plans and organise your big day with Hitch.</p>
@@ -71,7 +74,8 @@
     </div>
     <img class="start" src="./assets/img/RSVPs.png">
   </section>
-  <section class="cta" id="sign-up">
+  <section class="cta">
+    <div id="sign-up"></div>
     <div class="cta-title">
       <h2>We want you</h2><p class="tag-small">yes you</p>
     </div>

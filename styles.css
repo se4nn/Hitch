@@ -11,6 +11,10 @@
   --x-small: 8px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background:  var(--snow);
   padding: var(--small) var(--medium);
@@ -272,6 +276,10 @@ footer {
   order: -1;;
 }
 
+#sign-up {
+  margin-top: calc(var(--x-large) * -1);
+  height: var(--x-large);
+}
 
 /* PAGE SPECIFIC CSS */
 
