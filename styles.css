@@ -384,7 +384,7 @@ p + p {
     width: fit-content;
   }
 
-  nav .hamburger:focus ~ ul {
+  nav ul.show {
     display: block;
     flex-basis: 100%;
   }

@@ -14,11 +14,17 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
   <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
   <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+  <script>
+    function toggleMenu() {
+      var element = document.getElementById("menu");
+      element.classList.toggle("show");
+    }
+  </script>
 </head>
 <body>
   <nav>
-    <a class="hamburger" href="#"><img src="./assets/img/menu.svg"></a>
-    <ul>
+    <a class="hamburger" onclick="toggleMenu()"><img src="./assets/img/menu.svg"></a>
+    <ul id="menu">
       <li>
         <a href="#">What's Hitch?</a>
       </li>
