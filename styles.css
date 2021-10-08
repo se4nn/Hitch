@@ -67,6 +67,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 nav ul {
@@ -202,6 +203,7 @@ input {
 input[type="date"] {
   text-transform: uppercase;
   color: var(--heather);
+  -webkit-appearance: none;
 }
 
 *::placeholder {
@@ -373,6 +375,27 @@ p + p {
 
   nav ul {
     display: none;
+    order: 3;
+    margin-top: var(--small);
+    margin-left: var(--x-small);
+  }
+
+  nav ul li {
+    width: fit-content;
+  }
+
+  nav .hamburger:focus ~ ul {
+    display: block;
+    flex-basis: 100%;
+  }
+
+  nav ul li a{
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  nav ul li + li {
+    margin-top: var(--small);
   }
 
   .cta-question {
