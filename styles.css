@@ -273,10 +273,6 @@ footer {
   align-self: end;
 }
 
-.start {
-  order: -1;;
-}
-
 #sign-up {
   margin-top: calc(var(--x-large) * -1);
   height: var(--x-large);
@@ -309,6 +305,17 @@ footer {
 .hero-content {
   display: flex;
   flex-direction: column;
+}
+
+.hero-center {
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+.hero-center * {
+  text-align: center;
+  max-width: 800px;
+  align-items: center;
 }
 
 nav .tag-small {
@@ -405,6 +412,10 @@ p + p {
 
   nav ul li + li {
     margin-top: var(--small);
+  }
+
+  .start {
+    order: -1;;
   }
 
   .cta-question {
