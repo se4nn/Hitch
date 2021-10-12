@@ -45,7 +45,7 @@ p {
   font-weight: 400;
 }
 
-a, label {
+a, label, .bold {
   color: var(--dark);
   font-weight: 500;
 }
