@@ -18,6 +18,7 @@ html {
 body {
   background:  var(--snow);
   padding: var(--small) var(--medium);
+  width: auto !important;
 }
 
 h1, h2{
