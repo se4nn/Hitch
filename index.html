@@ -48,6 +48,7 @@
   /></noscript>
   <!-- End Facebook Pixel Code -->
   <script type="text/javascript" src="https://app.termly.io/embed.min.js" data-auto-block="on" data-website-uuid="17cc4ee5-070f-4f1c-8e78-b1b13f626ad1"></script>
+  <script>fbq('track', 'CompleteRegistration');</script>
 </head>
 <body>
   <script>AOS.init();</script>
@@ -123,9 +124,12 @@
           <input type="date" name="date" placeholder="DD/MM/YYYY" min="2021/09/30" required/>
         </div>
       </div>
-      <button type="submit" class="pageclip-form__submit button">
+      <button type="submit" class="pageclip-form__submit button" id="submitButton">
         <span>Sign up to Hitch</span>
       </button>
+      <script type="text/javascript">
+        document.getElementById('submitButton').addEventListener('click', function() {}, false);
+      </script>
     </form>
   </section>
   <footer>
