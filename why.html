@@ -28,6 +28,7 @@
       element.classList.toggle("show");
     }
   </script>
+  <script type="text/javascript" src="https://app.termly.io/embed.min.js" data-auto-block="on" data-website-uuid="17cc4ee5-070f-4f1c-8e78-b1b13f626ad1"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- Facebook Pixel Code -->
@@ -47,7 +48,6 @@
     src="https://www.facebook.com/tr?id=401252588291989&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Facebook Pixel Code -->
-  <script type="text/javascript" src="https://app.termly.io/embed.min.js" data-auto-block="on" data-website-uuid="17cc4ee5-070f-4f1c-8e78-b1b13f626ad1"></script>
 </head>
 <body>
   <script>AOS.init();</script>
@@ -112,7 +112,14 @@
         </div>
         <div class="cta-question">
           <label for="date">When’s your big day?</label>
-          <input type="date" name="date" placeholder="DD/MM/YYYY" min="2021/09/30" required/>
+          <select name="date">
+            <option value="" disabled>--Please choose an option--</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+          </select>
         </div>
       </div>
       <button type="submit" class="pageclip-form__submit button">

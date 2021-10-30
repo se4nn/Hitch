@@ -195,7 +195,7 @@ img {
   right: -64px;
 }
 
-input {
+input, select {
   padding: 16px;
   background: rgba(27, 27, 55, 0.16);
   border-radius: 4px;
@@ -205,11 +205,11 @@ input {
   border: none;
 }
 
-input[type="date"] {
+select {
   text-transform: uppercase;
   color: var(--heather);
   -webkit-appearance: none;
-  height: 24px;
+  width: 100%;
 }
 
 *::placeholder {
@@ -227,7 +227,7 @@ input[type="date"] {
 .pageclip-form .cta-questions {
   margin: var(--medium) 0;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 0px 24px;
   width: 100%;
 }
@@ -235,7 +235,6 @@ input[type="date"] {
 .cta-question {
   display: flex;
   flex-direction: column;
-  min-width: 33%;
 }
 
 .cta-question label {
