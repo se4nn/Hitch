@@ -48,6 +48,11 @@
     src="https://www.facebook.com/tr?id=440238714118176&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
+    <script>
+      document.getElementById('form').addEventListener('submit', function(){
+        fbq('track', 'Lead');
+      })  
+    </script>
 </head>
 <body>
   <script>AOS.init();</script>
@@ -99,7 +104,7 @@
     </div>
     <p>Both of you, that is. We’re looking for our first couples to help shape our platform, tell us what they think about our newest features, and help us decide what to include next.</p>
     <p class="bold">If that sounds like you, sign up below!</p>
-    <form action="https://send.pageclip.co/fdzatY4zjDS625rR2r0kMaLtyaGuD1Sc" class="pageclip-form" method="post">
+    <form action="https://send.pageclip.co/fdzatY4zjDS625rR2r0kMaLtyaGuD1Sc" class="pageclip-form" method="post" id="form">
       <div class="cta-questions">
         <div class="cta-question">
           <label for="name">What’s your name?</label>
