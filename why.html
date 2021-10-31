@@ -127,9 +127,14 @@
           </select>
         </div>
       </div>
-      <button type="submit" class="pageclip-form__submit button">
+      <button type="submit" class="pageclip-form__submit button" id="registerButton">
         <span>Sign up to Hitch</span>
       </button>
+      <script type="text/javascript">
+        $('#$registerButton').click(function() {
+          fbq('track', 'Lead');
+        });
+      </script>
     </form>
   </section>
   <footer>

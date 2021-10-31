@@ -435,10 +435,11 @@ p + p {
 
   footer p, footer .right {
     text-align: center;
+    margin: auto;
   }
 
   footer .logo {
-    margin: var(--small) 0;
+    margin: var(--small) auto;
     order: 1;
   }
 

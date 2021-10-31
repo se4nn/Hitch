@@ -49,11 +49,6 @@
     src="https://www.facebook.com/tr?id=440238714118176&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
-    <script>
-      function sendLead() {
-        fbq('track', 'Lead');
-      }
-    </script>
 </head>
 <body>
   <script>AOS.init();</script>
@@ -135,9 +130,14 @@
           </select>
         </div>
       </div>
-      <button type="submit" class="pageclip-form__submit button">
+      <button type="submit" class="pageclip-form__submit button" id="registerButton">
         <span>Sign up to Hitch</span>
       </button>
+      <script type="text/javascript">
+        $('#$registerButton').click(function() {
+          fbq('track', 'Lead');
+        });
+      </script>
     </form>
   </section>
   <footer>
