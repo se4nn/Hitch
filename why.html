@@ -127,13 +127,13 @@
           </select>
         </div>
       </div>
-      <button type="submit" class="pageclip-form__submit button" id="registerButton">
+      <button type="submit" class="pageclip-form__submit button" onclick="registerLead()">
         <span>Sign up to Hitch</span>
       </button>
-      <script type="text/javascript">
-        $('#$registerButton').click(function() {
+      <script>
+        function registerLead() {
           fbq('track', 'Lead');
-        });
+        }
       </script>
     </form>
   </section>
